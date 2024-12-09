@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Latest Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+        input[type="file"] {
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Upload Your Latest Data</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="household_file">Upload Household Data: </label>
+        <input type="file" name="household_file" id="household_file" required><br><br>
+        
+        <label for="transaction_file">Upload Transaction Data: </label>
+        <input type="file" name="transaction_file" id="transaction_file" required><br><br>
+
+        <label for="product_file">Upload Product Data: </label>
+        <input type="file" name="product_file" id="product_file" required><br><br>
+
+        <button type="submit">Upload Files</button>
+    </form>
+
+    <p><a href="/datapull">Back to Data Pull</a></p>
+
+</body>
+</html>
