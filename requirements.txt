@@ -3,3 +3,4 @@ azure-storage-blob
 Werkzeug
 gunicorn
 pandas
+dotenv
